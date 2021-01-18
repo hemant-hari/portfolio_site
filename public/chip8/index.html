@@ -7,13 +7,36 @@
   </head>
   <body>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <div id="title">
+      <pre>
+________/\\\\\\\\\__/\\\________/\\\__/\\\\\\\\\\\__/\\\\\\\\\\\\\_____________________/\\\\\\\\\____        
+ _____/\\\////////__\/\\\_______\/\\\_\/////\\\///__\/\\\/////////\\\_________________/\\\///////\\\__       
+  ___/\\\/___________\/\\\_______\/\\\_____\/\\\_____\/\\\_______\/\\\________________\/\\\_____\/\\\__      
+   __/\\\_____________\/\\\\\\\\\\\\\\\_____\/\\\_____\/\\\\\\\\\\\\\/___/\\\\\\\\\\\__\///\\\\\\\\\/___     
+    _\/\\\_____________\/\\\/////////\\\_____\/\\\_____\/\\\/////////____\///////////____/\\\///////\\\__    
+     _\//\\\____________\/\\\_______\/\\\_____\/\\\_____\/\\\____________________________/\\\______\//\\\_   
+      __\///\\\__________\/\\\_______\/\\\_____\/\\\_____\/\\\___________________________\//\\\______/\\\__  
+       ____\////\\\\\\\\\_\/\\\_______\/\\\__/\\\\\\\\\\\_\/\\\____________________________\///\\\\\\\\\/___ 
+        _______\/////////__\///________\///__\///////////__\///_______________________________\/////////_____
+      </pre>
+    </div>    
     <div id="controls">
-      <input type="file" id="file-input" />
-      <button id="reset">Reset</button>
+      <select id="rom-selector" class="button">
+        <option>Pick ROM</option>
+      </select>
+      <label class="button">
+        <input type="file" id="file-input"/>
+        LOAD ROM
+      </label>
+      <button id="reset" class="button"> RESET </button>
     </div>
-    <div id="canvas-container" class="scanlines">
-      <canvas id="canvas"></canvas>
-    </div>
+    <div class="col-lg-3">
+      <div class="img-container">
+        <div id="canvas-container" class="positioning">        
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+    <div/>
     <script src="./bootstrap.js"></script>
   </body>
 </html>
